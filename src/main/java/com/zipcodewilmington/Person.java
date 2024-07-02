@@ -14,14 +14,15 @@ public class Person {
 
     // why is this called a GETTER??
     public String getFirstName() {
-        return firstName;
+        return this.firstName;
     }
 
     public String getLastName() {
-        return lastName;
+        return this.lastName;
     }
 
     @Override // why is Override here??
+//    Overrides the default toString Method
     public String toString() {
         return new StringBuilder()
                 .append("\nMy first name is " + firstName)
